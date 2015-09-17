@@ -1,0 +1,36 @@
+<head>
+  <title>Patient's card</title>
+</head>
+
+<body>
+</body>
+
+<template name="AppLayout">
+  <div class="container">
+    <div class="navbar navbar-default navbar-material-light-blue-050">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">{{_"page_title"}}<div class="ripple-wrapper"></div></a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+                {{#if currentUser}}<li><a href="/patients">{{_"menu_patients"}}</a></li>{{/if}}
+                {{#if currentUser.profile.admin}}<li><a href="/users">{{_"menu_users"}}</a></li>{{/if}}
+                <li><a href="/help">Help</a></li>
+            </ul>
+        </div>
+    </div>
+
+    {{> loginButtons }} 
+
+    <article>
+        {{> flashMessages}}
+        {{> yield}}
+    </article>
+
+    </div> 
+</template>

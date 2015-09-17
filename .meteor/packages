@@ -1,0 +1,20 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+meteor-platform
+ian:accounts-ui-bootstrap-3
+iron:router
+multiply:iron-router-progress
+aldeed:autoform
+aldeed:collection2
+twbs:bootstrap
+accounts-password
+ongoworks:security
+mrt:flash-messages
+tap:i18n
+gwendall:autoform-i18n
+aslagle:reactive-table
+anti:i18n

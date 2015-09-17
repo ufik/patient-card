@@ -1,0 +1,10 @@
+<template name="User">
+  <h1>List of users <a href="/user-create" class="btn btn-fab btn-raised btn-material-green"><i class="mdi-content-add"></i></a></h1>
+
+  {{> reactiveTable settings=settings}}
+</template>
+
+<template name="userActions">
+	<a class="btn btn-primary" href="user-update/{{_id}}">{{_"button_edit"}}</a>
+	<a class="btn btn-danger" href="user-delete/{{_id}}">{{_"button_delete"}}</a>
+</template> 

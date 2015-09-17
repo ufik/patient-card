@@ -1,0 +1,24 @@
+{
+	"schemas": {
+		"patients" : {
+			"name": {
+				"label": "Jméno"
+			},
+			"address": {
+				"label": "Adresa"
+			},
+			"phone": {
+				"label": "Telefon"
+			}
+		}
+	},
+	"create_patient_title": "Přidat nového pacienta",
+	"menu_patients": "Pacienti",
+	"menu_users": "Uživatelé",
+	"page_title": "Kartotéka",
+	"unauthorized_please_login": "Nejdříve se musíte přihlásit.",
+	"welcome_title": "Vítejte",
+	"name_title": "Jméno",
+	"button_edit": "Upravit",
+	"button_delete": "Smazat"
+}

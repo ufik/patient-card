@@ -1,0 +1,11 @@
+<template name="Homepage">
+  <h1>Homepage</h1>
+
+  <div class="row">
+	  {{#if currentUser}}
+	  	<h2>{{_"welcome_title"}}</h2>
+	  {{else}}
+	  	<h2>{{_"unauthorized_please_login"}}</h2>
+	  {{/if}}
+  </div>
+</template>

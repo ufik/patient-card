@@ -1,0 +1,10 @@
+<template name="Patient">
+  <h1>List of patients <a href="/patient-create" class="btn btn-fab btn-raised btn-material-green"><i class="mdi-content-add"></i></a></h1>
+
+  {{> reactiveTable settings=settings}}
+</template>
+
+<template name="patientActions">
+	<a class="btn btn-primary" href="patient-update/{{_id}}">{{_"button_edit"}}</a>
+	<a class="btn btn-danger" href="patient-delete/{{_id}}">{{_"button_delete"}}</a>
+</template> 
