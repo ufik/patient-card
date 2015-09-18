@@ -5,6 +5,10 @@ Schema = new SimpleSchema({
       type: String,
       max: 200
     },
+    "sex": {
+      type: String,
+      allowedValues: ["male", "female"]
+    },
     "address": {
       type: String,
     },

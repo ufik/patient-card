@@ -20,5 +20,8 @@
 	"welcome_title": "Vítejte",
 	"name_title": "Jméno",
 	"button_edit": "Upravit",
-	"button_delete": "Smazat"
+	"button_delete": "Smazat",
+	"button_bandage": "Převazy",
+	"bandage_title": "Převazy pacienta - ",
+	"add_bandage_button": "Přidat převaz"
 }

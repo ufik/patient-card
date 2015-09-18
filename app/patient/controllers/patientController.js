@@ -44,7 +44,7 @@ if (Meteor.isClient) {
 	      this.render('PatientCreate');
 	    },
 
-	    delete: function() {
+	    delete: function () {
 	    	Patient.remove(this.params.id);
 	    },
 

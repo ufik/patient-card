@@ -21,3 +21,27 @@ Router.route('/patient-delete/:id', {
   controller: 'PatientController',
   action: 'delete'
 });
+
+Router.route('/patient-bandages/:id', {
+  name: 'patient-bandages',
+  controller: 'BandageController',
+  action: 'list'
+});
+
+Router.route('/bandage-create/:id', {
+  name: 'bandage-create',
+  controller: 'BandageController',
+  action: 'create'
+});
+
+Router.route('/bandage-update/:id', {
+  name: 'bandage-update',
+  controller: 'BandageController',
+  action: 'update'
+});
+
+Router.route('/bandage-delete/:id', {
+  name: 'bandage-delete',
+  controller: 'BandageController',
+  action: 'delete'
+});

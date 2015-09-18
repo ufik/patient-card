@@ -1,0 +1,7 @@
+<template name="BandageCreate">
+  <h1>{{_"create_bandage_title"}}</h1>
+
+  <div class="row">
+	  {{> quickForm collection="Bandage" id="insertBandageForm" type="insert" omitFields="patientId"}}
+  </div>
+</template>

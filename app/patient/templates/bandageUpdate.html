@@ -1,0 +1,7 @@
+<template name="BandageUpdate">
+  <h1>{{_"update_bandage_title"}}</h1>
+
+  <div class="row">
+	  {{> quickForm collection="Bandage" doc=this id="updateBandageForm" type="update" omitFields="patientId"}}
+  </div>
+</template>

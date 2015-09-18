@@ -1,0 +1,12 @@
+<template name="PatientBandages">
+  <h1>{{_"bandage_title"}} {{patient.name}}</h1>
+
+  <a href="/bandage-create/{{patientId}}" class="btn btn-primary">{{_"add_bandage_button"}}</a>
+
+  {{> reactiveTable settings=settings}}
+</template>
+
+<template name="bandageActions">
+	<a class="btn btn-primary" href="/bandage-update/{{_id}}">{{_"button_edit"}}</a>
+	<a class="btn btn-danger" href="/bandage-delete/{{_id}}">{{_"button_delete"}}</a>
+</template> 
