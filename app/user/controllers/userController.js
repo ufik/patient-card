@@ -4,7 +4,7 @@ if (Meteor.isClient) {
 
 	UserController = RouteController.extend({
 		onBeforeAction: function () {
-			if (!Meteor.user() || !Meteor.user().profile.admin) {
+			if (!Meteor.user() /*|| !Meteor.user().profile.admin*/) {
 				FlashMessages.sendWarning("Not authorized. Only admins have access to this section.");
 				Router.go('homepage');
 			} else {
@@ -99,7 +99,7 @@ if (Meteor.isServer) {
 			Accounts.setPassword(data.id, data.password);
 		}
 	});
-	
+
 	Meteor.publish("user", function() {
 	  return Meteor.users.find();
 	});

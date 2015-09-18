@@ -20,12 +20,13 @@
             <ul class="nav navbar-nav">
                 {{#if currentUser}}<li><a href="/patients">{{_"menu_patients"}}</a></li>{{/if}}
                 {{#if currentUser.profile.admin}}<li><a href="/users">{{_"menu_users"}}</a></li>{{/if}}
-                <li><a href="/help">Help</a></li>
+                
+                {{> loginButtons }} 
             </ul>
         </div>
     </div>
 
-    {{> loginButtons }} 
+    
 
     <article>
         {{> flashMessages}}
